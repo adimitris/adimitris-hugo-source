@@ -4,6 +4,19 @@ title = "Dimitris Alexandridis - Personal Site"
 theme = "hello-friend-ng"
 pygmentsStyle = "native"
 
+DefaultContentLanguage = "en"
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -15,18 +28,34 @@ pygmentsStyle = "native"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
+  homeSubtitle = "engineering student, hobbyist"
+
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # Default theme "light" or "dark"
   defaultTheme = "light"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/adimitris"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/dimitrisalexandridis"
 
 [languages]
   [languages.en]
     title = "Dimitris Alexandridis"
     subtitle = "My personal website"
     keywords = ""
-    copyright = ""
     readOtherPosts = "Read other posts"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
     [languages.en.params.logo]
       logoText = "Dimitris Alexandridis"
@@ -36,28 +65,20 @@ pygmentsStyle = "native"
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-	# You can create a language based menu
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
-      [[languages.en.menu.main]]
-        identifier = "blog"
-        name = "Blog"
-        url = "/blog"
-
 # And you can even create generic menu
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
+    weight = 1
+    identifier = "home"
+    name       = "Home"
+    url        = "/"
   [[menu.main]]
+    weight = 2
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
+  [[menu.main]]
+    weight = 3
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
