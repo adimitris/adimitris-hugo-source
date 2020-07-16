@@ -1,7 +1,7 @@
 ---
 title: "Experience"
 date: 2020-07-12T18:44:21+03:00
-draft: false
+draft: true
 ---
 
 ## Summer 2019 - Raycap, Greece – IT developer, Smart Plant Transition (Operations Dept.)
