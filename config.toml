@@ -74,11 +74,21 @@ disable404     = false
     url        = "/"
   [[menu.main]]
     weight = 2
+    identifier = "experience"
+    name       = "Experience"
+    url        = "/experience"
+  [[menu.main]]
+    weight = 3
+    identifier = "education"
+    name       = "Education"
+    url        = "/education"
+  [[menu.main]]
+    weight = 4
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
   [[menu.main]]
-    weight = 3
+    weight = 5
     identifier = "about"
     name       = "About"
     url        = "/about"
