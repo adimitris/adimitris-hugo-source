@@ -28,7 +28,7 @@ disable404     = false
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
-  homeSubtitle = "engineering student, hobbyist"
+  homeSubtitle = "computer engineer, technologist"
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
@@ -72,16 +72,16 @@ disable404     = false
     identifier = "home"
     name       = "Home"
     url        = "/"
-  [[menu.main]]
-    weight = 2
-    identifier = "experience"
-    name       = "Experience"
-    url        = "/experience"
-  [[menu.main]]
-    weight = 3
-    identifier = "education"
-    name       = "Education"
-    url        = "/education"
+#  [[menu.main]]
+#    weight = 2
+#    identifier = "experience"
+#    name       = "Experience"
+#    url        = "/experience"
+#  [[menu.main]]
+#    weight = 3
+#    identifier = "education"
+#    name       = "Education"
+#    url        = "/education"
   [[menu.main]]
     weight = 4
     identifier = "blog"
